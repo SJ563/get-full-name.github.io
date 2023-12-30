@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 500px;
+    width: 60%;
+    border: 2px solid #000000;
+    background-color: aqua;
+    border-radius: 40px;
+    margin-top: 100px;
+    margin-left: 280px;
+    display: flex; /* Make container a flexbox */
+    flex-direction: column; /* Arrange elements vertically */
+}
+
+.img-caller {
+    height: 450px;
+    width: 500px;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+}
+
+.img-caller img {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.input-boxes {
+    margin-top: -350px; /* Adjust spacing if needed */
+    height: 600px;
+    width: 600px;
+    margin-left: 320px;
+}
+
+#first-box, #second-box, #third-box, #fourth-box{
+    height: 50px;
+    width: 600px;
+    border: 2px black solid;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#btn
+{
+    height: 50px;
+    width: 600px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+#btn:hover
+{
+    color: white;
+    background-color: #000000;
+}
+@media screen and (max-width: 767px) {
+    /* Overall layout adjustments */
+    .container {
+      width: 90%; /* Take up most of the screen width */
+      height: 600px;
+      margin-top: 50px; /* Reduce top margin */
+      margin-left: 5%; /* Center horizontally */
+      overflow: hidden;
+    }
+  
+    /* Image adjustments */
+    .img-caller {
+      height: 240px; /* Reduce image height */
+      width: 100%; /* Keep image width as 100% */
+      margin-top: 20px; /* Adjust spacing */
+      margin-left: 60px;
+    }
+  
+    /* Input fields adjustments */
+    .input-boxes {
+      margin-top: 10px; /* Adjust spacing */
+      height: 400px; /* Reduce input box area height */
+      width: 100%; /* Keep width as 100% */
+      margin-left: 15px; /* Remove left margin */
+    }
+  
+    #first-box, #second-box, #third-box, #fourth-box, #btn{
+      width: 90%; /* Make inputs full width */
+      font-size: 16px; /* Slightly reduce font size */
+    }
+  
+    /* Button adjustments */
+    #btn {
+      margin-top: 5px; /* Add some spacing above button */
+    }
+    #btn:hover{
+        color: white;
+        background-color: #000000;
+
+    }
+  }
+  
